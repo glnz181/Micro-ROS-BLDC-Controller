@@ -1,0 +1,6 @@
+../Core/Src/microros_app.c:28:6:speed_command_callback	24	static
+../Core/Src/microros_app.c:37:6:microros_app_init	24	static
+../Core/Src/microros_app.c:74:6:microros_app_spin	8	static
+../Core/Src/microros_app.c:79:6:microros_has_new_speed_command	4	static
+../Core/Src/microros_app.c:83:9:microros_get_target_rpm	4	static
+../Core/Src/microros_app.c:87:6:microros_clear_new_speed_command	4	static

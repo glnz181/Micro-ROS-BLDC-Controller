@@ -1,0 +1,5 @@
+../Core/Src/motor_control.c:11:6:motor_control_init	4	static
+../Core/Src/motor_control.c:15:6:motor_enable	48	static
+../Core/Src/motor_control.c:41:6:motor_reset	48	static
+../Core/Src/motor_control.c:67:6:motor_set_speed_rpm	64	static
+../Core/Src/motor_control.c:100:6:send_set_acceleration	64	static
