@@ -58,14 +58,14 @@ size_t cubemx_transport_read(struct uxrCustomTransport* transport, uint8_t* buf,
         ms_used++;
         osDelay(portTICK_RATE_MS);
     } while (dma_head == dma_tail && ms_used < timeout);
-    
+
     size_t wrote = 0;
     while ((dma_head != dma_tail) && (wrote < len)){
         buf[wrote] = dma_buffer[dma_head];
         dma_head = (dma_head + 1) % UART_DMA_BUFFER_SIZE;
         wrote++;
     }
-    
+
     return wrote;
 }
 

@@ -1,6 +1,8 @@
-../Core/Src/microros_app.c:28:6:speed_command_callback	1
-../Core/Src/microros_app.c:37:6:microros_app_init	6
-../Core/Src/microros_app.c:74:6:microros_app_spin	1
-../Core/Src/microros_app.c:79:6:microros_has_new_speed_command	1
-../Core/Src/microros_app.c:83:9:microros_get_target_rpm	1
-../Core/Src/microros_app.c:87:6:microros_clear_new_speed_command	1
+../Core/Src/microros_app.c:44:13:led_blink	2
+../Core/Src/microros_app.c:54:13:error_blink	1
+../Core/Src/microros_app.c:61:6:speed_command_callback	1
+../Core/Src/microros_app.c:69:6:microros_app_init	8
+../Core/Src/microros_app.c:138:6:microros_app_spin	1
+../Core/Src/microros_app.c:144:6:microros_has_new_speed_command	1
+../Core/Src/microros_app.c:148:9:microros_get_target_rpm	1
+../Core/Src/microros_app.c:152:6:microros_clear_new_speed_command	1

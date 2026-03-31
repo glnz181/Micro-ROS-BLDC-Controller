@@ -4,21 +4,11 @@
  * @file           : main.c
  * @brief          : Main program body
  ******************************************************************************
- * @attention
- *
- * Copyright (c) 2026 STMicroelectronics.
- * All rights reserved.
- *
- * This software is licensed under terms that can be found in the LICENSE file
- * in the root directory of this software component.
- * If no LICENSE file comes with this software, it is provided AS-IS.
- *
- ******************************************************************************
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-//#include "cmsis_os.h"
+#include "cmsis_os.h"
 #include "dma.h"
 #include "usart.h"
 #include "gpio.h"
@@ -26,9 +16,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "motor_control.h"
-#include "stdio.h"
-#include "string.h"
-
+#include "microros_app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,7 +42,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-//void MX_FREERTOS_Init(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -100,32 +88,18 @@ int main(void) {
 	/* USER CODE END 2 */
 
 	/* Init scheduler */
-	//osKernelInitialize(); /* Call init function for freertos objects (in cmsis_os2.c) */
-	//MX_FREERTOS_Init();
+	osKernelInitialize(); /* Call init function for freertos objects (in cmsis_os2.c) */
+	MX_FREERTOS_Init();
 
 	/* Start scheduler */
-	//osKernelStart();
+	osKernelStart();
 
 	/* We should never get here as control is now taken by the scheduler */
 
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
-	motor_control_init();
-
-
-
-	send_set_acceleration(100000);
-	HAL_Delay(500);
-
-	motor_enable();
-	HAL_Delay(500);
 
 	while (1) {
-
-		motor_set_speed_rpm(500);
-		HAL_Delay(5000);
-		motor_set_speed_rpm(0);
-
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
