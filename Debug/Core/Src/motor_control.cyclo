@@ -1,5 +1,4 @@
-../Core/Src/motor_control.c:12:6:motor_control_init	1
-../Core/Src/motor_control.c:16:6:motor_enable	1
-../Core/Src/motor_control.c:45:6:motor_reset	1
-../Core/Src/motor_control.c:71:6:motor_set_speed_rpm	1
-../Core/Src/motor_control.c:103:6:motor_set_acceleration	1
+../Core/Src/motor_control.c:12:6:motor_enable	1
+../Core/Src/motor_control.c:41:6:motor_reset	1
+../Core/Src/motor_control.c:67:6:motor_set_speed_rpm	1
+../Core/Src/motor_control.c:99:6:motor_set_acceleration	1
